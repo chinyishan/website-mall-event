@@ -1,0 +1,532 @@
+// body{
+//     background-image: url('/20221216_angel.jpg');
+//     background-position: top center;
+//     background-size: 100% auto;
+//     background-repeat: no-repeat;
+// }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aaaaaa;
+
+  &:hover {
+    background-color: #666666;
+  }
+}
+
+// .hotKey,
+// .ins-stories,
+// .ins-preview-wrapper {
+//   display: none !important;
+// }
+
+// body.header_fixed .contentWrap.angel_puriginal {
+//   padding-top: 0 !important;
+// }
+
+.angel_puriginal {
+  // opacity: .5;
+  // height: 10000px;
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/angel-lala-puriginal/20221216_angel_bg_V2.jpg");
+  background-position: 0 40vw;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: transparent;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .float_menuEX {
+    position: absolute;
+    top: 12.5vh;
+    right: 3%;
+    z-index: 10;
+    transition: all 0.2s linear;
+
+    img {
+      height: 60vh;
+    }
+
+    &.active {
+      position: fixed !important;
+      top: 22.5vh !important;
+    }
+  }
+
+  .main-logo {
+    position: relative;
+
+    .animation_group {
+      position: absolute;
+      top: 43%;
+      left: 21%;
+      width: 24%;
+      overflow: hidden;
+    }
+
+    .limit-product {
+      position: absolute;
+      top: 21%;
+      right: 20%;
+      width: 26%;
+      overflow: hidden;
+
+      .swiper-slide {
+        text-align: center;
+
+        img {
+          opacity: 0;
+          transition: all 0.35s linear;
+        }
+
+        &.swiper-slide-next {
+          img {
+            opacity: 0.5;
+            transition: all 0.35s linear;
+          }
+        }
+
+        &.swiper-slide-active {
+          img {
+            opacity: 1;
+            transition: all 0.35s linear;
+          }
+        }
+      }
+    }
+  }
+
+  //主要內容
+  .main-content {
+    position: relative;
+    // top: -236px;
+    z-index: 5;
+    width: 1170px;
+    max-width: 93.5%;
+    margin: 0px auto 0;
+    overflow: hidden;
+
+    //搶購攻略
+    .wrap_strategy {
+      margin-bottom: 20px;
+
+      .main_title {
+        margin-bottom: 20px;
+      }
+
+      .strategy_row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        .strategy_col {
+          margin: 0 5px;
+          cursor: pointer;
+          transition: all 0.3s ease-out;
+
+          &:hover {
+            transition: all 0.3s ease-out;
+            transform: scale(0.95);
+          }
+        }
+      }
+
+      .strategy_txt {
+        width: 95%;
+      }
+    }
+
+    .wrap_banner {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      .swiper-slide {
+        text-align: center;
+
+        img {
+          opacity: 1;
+          transition: all 0.35s linear;
+        }
+      }
+    }
+
+    .wrap_goddess {
+      margin-bottom: 10px;
+
+      .main_title {
+        margin-bottom: 20px;
+      }
+
+      .goddess_col {
+        display: block;
+      }
+    }
+
+    .wrap_product {
+      margin-bottom: 15px;
+
+      .product_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .product_col {
+          display: block;
+          width: 48%;
+          margin: 5px;
+          transition: all 0.3s ease-out;
+
+          &:hover {
+            transition: all 0.3s ease-out;
+            transform: translateY(-8px);
+          }
+        }
+      }
+    }
+
+    .wrap_video {
+      margin-bottom: 30px;
+
+      .main_title {
+        margin-bottom: 10px;
+      }
+
+      .video_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        margin-bottom: 20px;
+
+        .video_player {
+          width: 70%;
+          margin-right: 20px;
+
+          iframe {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+          }
+        }
+        a {
+          img:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .wrap_brand {
+      img {
+        display: block;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  //品牌 btn
+  .main_brand_more {
+    background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/angel-lala-puriginal/20221216_angel_bg_V3.jpg");
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    // margin-bottom: -70px;
+
+    .logo_row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+
+      .logo_col {
+        display: block;
+        position: relative;
+
+        .logo_pic:nth-child(1) {
+          position: relative;
+          z-index: 1;
+
+          &:hover {
+            opacity: 0;
+            transition: all 0.3s ease-out;
+          }
+        }
+
+        .logo_pic:nth-child(2) {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .more_btn {
+      display: block;
+      margin: 0 auto;
+      width: 28%;
+      transition: all 0.3s ease-out;
+      padding-bottom: 30px;
+
+      &:hover {
+        transition: all 0.3s ease-out;
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  //燈箱
+  .fix-bg {
+    display: none;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(40, 40, 40, 0.5);
+
+    .light-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 750px;
+      max-width: 95%;
+      background-color: #5c2032;
+      border: 3.5px solid #9e3352;
+      border-radius: 50px;
+      overflow: hidden;
+
+      .light-box-header {
+        padding: 20px 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .close-button {
+          position: absolute;
+          top: 10px;
+          right: 30px;
+          height: 30px;
+          width: 30px;
+          font-size: 18px;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          cursor: pointer;
+          color: #fff;
+          background-color: #ae113d;
+        }
+      }
+
+      .light-box-content {
+        // clear: both;
+        height: calc(75vh - 145px);
+        overflow-y: auto;
+        padding: 20px;
+
+        .text {
+          clear: both;
+          margin-bottom: 15px;
+
+          b {
+            color: #fffc07;
+            font-size: 16px;
+            font-weight: 600;
+            float: left;
+          }
+          p {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+
+        .gift {
+          margin-bottom: 15px;
+          p {
+            color: #fff;
+          }
+          .gift_txt {
+            background-color: #a36577;
+            padding: 8px;
+            margin-top: 10px;
+          }
+        }
+
+        .matter {
+          background-color: #fff;
+          margin-top: 20px;
+          padding: 20px;
+          border-radius: 0 0 10px 10px;
+
+          b {
+            color: #ff0347;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          ul {
+            list-style: decimal;
+            margin-top: 10px;
+
+            li {
+              color: #ff0347;
+              font-size: 16px;
+              font-weight: 400;
+              margin-left: 20px;
+              margin-bottom: 10px;
+              text-align: justify;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fix-bg.dis-on {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  // .contentWrap.customWrap.angel_puriginal {
+  //   padding-top: 0 !important;
+  //   margin-top: 0 !important;
+  //   position: absolute;
+  //   top: 90px;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  // }
+
+  // .angel_puriginal {
+  //   .main-content {
+  //     margin: -110px auto 0;
+  //   }
+  // }
+
+  // .footer_fixed {
+  //   z-index: 100;
+  // }
+}
+
+@media only screen and (max-width: 1024px) {
+  .angel_puriginal {
+    .float_menuEX {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // .contentWrap.customWrap.angel_puriginal {
+  //   padding-top: 0 !important;
+  //   margin-top: 0 !important;
+  //   position: absolute;
+  //   top: 90px;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  .angel_puriginal {
+    .main-logo {
+      .animation_group {
+        position: absolute;
+        top: 43%;
+        left: 10%;
+        width: 33%;
+        overflow: hidden;
+      }
+      .limit-product {
+        top: 20%;
+        right: 9%;
+        width: 37%;
+      }
+      .logo_bg {
+        width: 140%;
+        max-width: 140%;
+        margin-left: -20%;
+      }
+    }
+
+    .main-content {
+      margin: -70px auto 0;
+
+      .wrap_product {
+        .product_row {
+          .product_col {
+            width: 90%;
+            margin: 2px;
+          }
+        }
+      }
+
+      .wrap_video {
+        .video_row {
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          .video_player {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 10px;
+
+            iframe {
+              display: block;
+              width: 100%;
+              height: auto;
+              aspect-ratio: 16 / 9;
+            }
+          }
+          a {
+            img:nth-child(1) {
+              display: none;
+            }
+            img:nth-child(2) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .main_brand_more {
+      margin-bottom: -116px;
+      .logo_row {
+        padding: 20px;
+      }
+      .more_btn {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+  }
+}
