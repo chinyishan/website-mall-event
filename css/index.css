@@ -34,9 +34,15 @@
   display: block;
 }
 
+.card .card-img {
+  height: 200px;
+  overflow: hidden;
+}
+
 .card h2 {
   margin: 1rem 0;
   font-size: 1.25rem;
   color: #5e645e;
   font-weight: 400;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

@@ -1,10 +1,3 @@
-// body{
-//     background-image: url('/20221216_angel.jpg');
-//     background-position: top center;
-//     background-size: 100% auto;
-//     background-repeat: no-repeat;
-// }
-
 ::-webkit-scrollbar {
   width: 5px;
   background-color: #d9d9d9;
@@ -20,19 +13,7 @@
   }
 }
 
-// .hotKey,
-// .ins-stories,
-// .ins-preview-wrapper {
-//   display: none !important;
-// }
-
-// body.header_fixed .contentWrap.angel_puriginal {
-//   padding-top: 0 !important;
-// }
-
 .angel_puriginal {
-  // opacity: .5;
-  // height: 10000px;
   background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/angel-lala-puriginal/20221216_angel_bg_V2.jpg");
   background-position: 0 40vw;
   background-repeat: repeat-y;
@@ -408,31 +389,31 @@
   }
 }
 
-@media only screen and (max-width: 1199px) {
-  // .contentWrap.customWrap.angel_puriginal {
-  //   padding-top: 0 !important;
-  //   margin-top: 0 !important;
-  //   position: absolute;
-  //   top: 90px;
-  //   left: 0;
-  //   width: 100%;
-  // }
-  // .footer_bottom {
-  //   position: absolute;
-  //   left: 0;
-  //   width: 100%;
-  // }
+// @media only screen and (max-width: 1199px) {
+//   .contentWrap.customWrap.angel_puriginal {
+//     padding-top: 0 !important;
+//     margin-top: 0 !important;
+//     position: absolute;
+//     top: 90px;
+//     left: 0;
+//     width: 100%;
+//   }
+//   .footer_bottom {
+//     position: absolute;
+//     left: 0;
+//     width: 100%;
+//   }
 
-  // .angel_puriginal {
-  //   .main-content {
-  //     margin: -110px auto 0;
-  //   }
-  // }
+//   .angel_puriginal {
+//     .main-content {
+//       margin: -110px auto 0;
+//     }
+//   }
 
-  // .footer_fixed {
-  //   z-index: 100;
-  // }
-}
+//   .footer_fixed {
+//     z-index: 100;
+//   }
+// }
 
 @media only screen and (max-width: 1024px) {
   .angel_puriginal {
@@ -443,19 +424,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  // .contentWrap.customWrap.angel_puriginal {
-  //   padding-top: 0 !important;
-  //   margin-top: 0 !important;
-  //   position: absolute;
-  //   top: 90px;
-  //   left: 0;
-  //   width: 100%;
-  // }
-  // .footer_bottom {
-  //   position: absolute;
-  //   left: 0;
-  //   width: 100%;
-  // }
   .angel_puriginal {
     .main-logo {
       .animation_group {
