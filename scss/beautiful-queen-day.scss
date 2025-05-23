@@ -1,0 +1,492 @@
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aaaaaa;
+  &:hover {
+    background-color: #666666;
+  }
+}
+
+.beautiful-queen-day {
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230202_Im-Queen_bg_VC2.jpg");
+  background-position: 0 129vw;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: transparent;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content_all {
+    margin-bottom: 60px;
+    .content_title {
+      margin-bottom: 25px;
+    }
+  }
+
+  .main-logo {
+    position: relative;
+    margin-bottom: 20px;
+    img:nth-child(1) {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 57%;
+    }
+  }
+
+  .float_menuEX {
+    position: absolute;
+    top: 12.5vh;
+    left: 7%;
+    height: 50vh;
+    z-index: 10;
+    transition: all 0.2s linear;
+    &.active {
+      position: fixed !important;
+      top: 22.5vh !important;
+    }
+  }
+
+  .main-content {
+    position: relative;
+    z-index: 5;
+    width: 1170px;
+    max-width: 93.5%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .wrap_discount {
+      background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230202_Im-Queen_coupon_VC2.png");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+
+      .discount_row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .discount_col {
+          width: 30%;
+        }
+        a.discount_col {
+          display: block;
+          transition: 0.3s ease-out;
+          &:hover {
+            transform: translateY(-8px);
+          }
+        }
+      }
+    }
+    .wrap_vie {
+      .vie_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .vie_col {
+          width: 32%;
+          margin: 5px;
+          transition: 0.3s ease-out;
+          &:hover {
+            transform: translateY(-12px);
+          }
+        }
+      }
+    }
+    .wrap_featured {
+      .featured_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .featured_col {
+          width: 26%;
+          margin: 0 25px;
+          transition: 0.3s ease-out;
+          &:hover {
+            transform: translateY(-12px);
+          }
+        }
+      }
+    }
+    .wrap_brand {
+      .tab_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        li {
+          margin: 5px;
+          display: block;
+          width: 18%;
+          padding: 10px;
+          font-size: 44px;
+          border-radius: 10px;
+          font-weight: bold;
+          text-align: center;
+          -webkit-text-stroke: 0.3px #7f6d38;
+          color: #7f6d38;
+          background-color: #700615;
+          cursor: pointer;
+        }
+        li.active {
+          -webkit-text-stroke: 0.3px #ffda71;
+          color: #ffda71;
+          background-color: #e00c2a;
+        }
+      }
+      .tab_container {
+        .tab_content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 0 auto;
+          padding: 20px 0;
+          background-color: #d42b20;
+
+          .brand_col {
+            margin: 3px;
+            width: 19%;
+            transition: 0.3s ease-out;
+            a {
+              img {
+                display: block;
+                width: 100%;
+              }
+            }
+            &:hover {
+              transform: translateY(-12px);
+            }
+          }
+        }
+      }
+    }
+    .wrap_deliver {
+      .deliver_header {
+        position: relative;
+        background: linear-gradient(-45deg, #f8ea78, #c79734);
+        border-radius: 30px 30px 0 0;
+        margin: 0 auto;
+        padding: 15px;
+
+        a.link_more {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          display: block;
+          width: 15%;
+          transition: 0.3s ease-out;
+          &:hover {
+            transform: translateX(8px);
+          }
+
+          img {
+            width: 100%;
+            display: block;
+            margin: auto;
+          }
+        }
+      }
+      .deliver_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230213_Im-Queen_buy_BG.jpg");
+        background-repeat: repeat-y;
+        background-size: 100% auto;
+        background-position: top left;
+        border-left: 7px solid #c79734;
+        border-right: 7px solid #c79734;
+        padding: 20px 0;
+
+        .deliver_col {
+          width: 30%;
+          margin: 5px;
+          transition: 0.3s ease-out;
+          &:hover {
+            transform: translateY(-12px);
+          }
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        height: 7px;
+        width: 100%;
+        background: linear-gradient(
+          -45deg,
+          #c79734,
+          #f8ea78,
+          #c79734,
+          #f8ea78,
+          #c79734
+        );
+      }
+    }
+    .wrap_more {
+      margin-bottom: 40px;
+      a {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        transition: 0.3s ease-out;
+        &:hover {
+          transform: scale(0.9);
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  // .contentWrap.beautiful-queen-dayWrap.beautiful-queen-day {
+  //   padding-top: 0 !important;
+  //   margin-top: 0 !important;
+  //   position: absolute;
+  //   top: 90px;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_fixed {
+  //   z-index: 100;
+  // }
+  .beautiful-queen-day {
+    .main-content {
+      .wrap_brand {
+        .tab_title {
+          li {
+            width: 18%;
+            padding: 8px;
+            font-size: 32px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .beautiful-queen-day {
+    .float_menuEX {
+      display: none;
+    }
+    .main-content {
+      .wrap_brand {
+        .tab_title {
+          li {
+            width: 18%;
+            padding: 8px;
+            font-size: 28px;
+            border-radius: 5px;
+          }
+        }
+        .tab_container {
+          .tab_content {
+            padding: 10px 0;
+            width: 95%;
+            .brand_col {
+              margin: 5px;
+              width: 32%;
+            }
+            &::after {
+              content: "";
+              margin: 5px;
+              width: 32%;
+            }
+          }
+        }
+      }
+      .wrap_deliver {
+        .deliver_row {
+          background-size: 156% auto;
+          background-position: left;
+          border-left: 4px solid #c79734;
+          border-right: 4px solid #c79734;
+          padding: 10px 0;
+
+          .deliver_col {
+            width: 45%;
+            margin: 5px;
+            transition: 0.3s ease-out;
+            &:hover {
+              transform: translateY(-12px);
+            }
+          }
+          &::after {
+            content: "";
+            width: 45%;
+            margin: 5px;
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 100%;
+          background: linear-gradient(
+            -45deg,
+            #c79734,
+            #f8ea78,
+            #c79734,
+            #f8ea78,
+            #c79734
+          );
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .beautiful-queen-day {
+    background-position: 0 150vw;
+    .content_all {
+      margin-bottom: 30px;
+      .content_title {
+        margin-bottom: 15px;
+      }
+    }
+    .main-logo {
+      img:nth-child(1) {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+      }
+      img:nth-child(2) {
+        width: 140%;
+        min-width: 140%;
+        margin-left: -20%;
+      }
+    }
+    .main-content {
+      .wrap_vie {
+        .vie_row {
+          .vie_col {
+            width: 45%;
+          }
+        }
+      }
+      .wrap_featured {
+        .featured_row {
+          .featured_col {
+            width: 30%;
+            margin: 0 10px;
+          }
+        }
+      }
+      .wrap_brand {
+        .tab_title {
+          li {
+            width: 28%;
+            padding: 8px;
+            font-size: 18px;
+            border-radius: 5px;
+          }
+        }
+        .tab_container {
+          .tab_content {
+            // justify-content:space-between;
+            padding: 10px 0;
+            width: 95%;
+            .brand_col {
+              margin: 5px;
+              width: 45%;
+            }
+            &::after {
+              content: "";
+              margin: 5px;
+              width: 45%;
+            }
+          }
+        }
+      }
+      .wrap_deliver {
+        .deliver_header {
+          padding: 10px;
+          border-radius: 20px 20px 0 0;
+
+          img.deliver_title {
+            width: 50%;
+          }
+          a.link_more {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: block;
+            width: 18%;
+          }
+        }
+        .deliver_row {
+          background-size: 156% auto;
+          background-position: left;
+          border-left: 4px solid #c79734;
+          border-right: 4px solid #c79734;
+          padding: 10px 0;
+
+          .deliver_col {
+            width: 45%;
+            margin: 5px;
+            transition: 0.3s ease-out;
+            &:hover {
+              transform: translateY(-12px);
+            }
+          }
+          &::after {
+            content: "";
+            width: 45%;
+            margin: 5px;
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 100%;
+          background: linear-gradient(
+            -45deg,
+            #c79734,
+            #f8ea78,
+            #c79734,
+            #f8ea78,
+            #c79734
+          );
+        }
+      }
+      .wrap_more {
+        a {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

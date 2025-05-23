@@ -1,0 +1,240 @@
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aaaaaa;
+  &:hover {
+    background-color: #666666;
+  }
+}
+
+.japanese-preferred {
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/japanese-preferred-hall/20230807_JP_autumn_bg.jpg");
+  background-position: 0 54vw;
+  overflow: hidden;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: #f6d2ae;
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  #maple_leaf {
+    position: fixed;
+    top: -8%;
+    left: -5%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    pointer-events: none;
+    transform-style: preserve-3d;
+
+    .mp {
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 20px;
+      z-index: 1;
+      animation: falling 8s 0s infinite;
+    }
+  }
+  #maple_leaf .mp:nth-of-type(2n) {
+    animation: falling2 7s 0s infinite;
+  }
+  #maple_leaf .mp:nth-of-type(3n) {
+    animation: falling3 8s 0s infinite;
+  }
+  #maple_leaf .mp:nth-of-type(4n) {
+    animation: falling 7s 0s infinite;
+  }
+  #maple_leaf .mp:nth-of-type(5n) {
+    animation: falling3 8s 0s infinite;
+  }
+  #maple_leaf .mp:nth-of-type(n) {
+    width: clamp(36px, 4vw, 80px);
+    height: clamp(36px, 4vw, 80px);
+  }
+  #maple_leaf .mp:nth-of-type(2n + 1) {
+    width: clamp(20px, 2.4vw, 50px);
+    height: clamp(20px, 2.4vw, 50px);
+  }
+  #maple_leaf .mp:nth-of-type(3n + 2) {
+    width: clamp(26px, 3vw, 70px);
+    height: clamp(26px, 3vw, 70px);
+  }
+  #maple_leaf .mp:nth-of-type(n) {
+    animation-delay: 1.9s;
+  }
+  #maple_leaf .mp:nth-of-type(2n) {
+    animation-delay: 3.9s;
+  }
+  #maple_leaf .mp:nth-of-type(3n) {
+    animation-delay: 2.3s;
+  }
+  #maple_leaf .mp:nth-of-type(4n) {
+    animation-delay: 4.4s;
+  }
+  #maple_leaf .mp:nth-of-type(5n) {
+    animation-delay: 5s;
+  }
+  #maple_leaf .mp:nth-of-type(6n) {
+    animation-delay: 3.5s;
+  }
+  #maple_leaf .mp:nth-of-type(7n) {
+    animation-delay: 2.8s;
+  }
+  #maple_leaf .mp:nth-of-type(8n) {
+    animation-delay: 1.5s;
+  }
+  #maple_leaf .mp:nth-of-type(9n) {
+    animation-delay: 3.3s;
+  }
+  #maple_leaf .mp:nth-of-type(10n) {
+    animation-delay: 2.5s;
+  }
+  #maple_leaf .mp:nth-of-type(11n) {
+    animation-delay: 1.2s;
+  }
+  #maple_leaf .mp:nth-of-type(12n) {
+    animation-delay: 4.1s;
+  }
+  #maple_leaf .mp:nth-of-type(13n) {
+    animation-delay: 1s;
+  }
+  #maple_leaf .mp:nth-of-type(14n) {
+    animation-delay: 4.7s;
+  }
+  #maple_leaf .mp:nth-of-type(15n) {
+    animation-delay: 3s;
+  }
+  #maple_leaf .mp:nth-of-type(n) {
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes falling {
+    0% {
+      transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(650px, 1200px, 40px) rotate3d(1, 1, 1, 720deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes falling2 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(900px, 1200px, 80px) rotate3d(1, 1, 1, 360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes falling3 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate3d(230px, 1200px, 100px) rotate3d(1, 1, 1, 500deg);
+      opacity: 0;
+    }
+  }
+  .main-logo {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .main-content {
+    position: relative;
+    z-index: 5;
+    width: 1150px;
+    max-width: 93.5%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      margin-bottom: 47px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  // .contentWrap.customWrap.japanese-preferred {
+  //   padding-top: 0 !important;
+  //   margin-top: 0 !important;
+  //   position: absolute;
+  //   top: 90px;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_fixed {
+  //   z-index: 100;
+  // }
+}
+
+// @media only screen and (max-width: 1024px) {
+//     .japanese-preferred {
+//         .float_menuEX{
+//             display: none;
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 768px) {
+  // .contentWrap.customWrap.japanese-preferred {
+  //   padding-top: 0 !important;
+  //   margin-top: 0 !important;
+  //   position: absolute;
+  //   top: 90px;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  // .footer_bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  // }
+  .japanese-preferred {
+    background-position: 50% 54vw;
+    background-size: 150% auto;
+
+    #maple_leaf {
+      display: none;
+    }
+    .main-logo {
+      margin-bottom: 20px;
+
+      .logo_pic {
+        width: 135%;
+        min-width: 135%;
+        margin-left: -17.5%;
+      }
+    }
+    .main-content {
+      margin: 0 auto -40px;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aaaaaa;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+
+.japanese-preferred {
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/japanese-preferred-hall/20230807_JP_autumn_bg.jpg");
+  background-position: 0 54vw;
+  overflow: hidden;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: #f6d2ae;
+  position: relative;
+}
+.japanese-preferred img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.japanese-preferred #maple_leaf {
+  position: fixed;
+  top: -8%;
+  left: -5%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+.japanese-preferred #maple_leaf .mp {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  z-index: 1;
+  animation: falling 8s 0s infinite;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(2n) {
+  animation: falling2 7s 0s infinite;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(3n) {
+  animation: falling3 8s 0s infinite;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(4n) {
+  animation: falling 7s 0s infinite;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(5n) {
+  animation: falling3 8s 0s infinite;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(n) {
+  width: clamp(36px, 4vw, 80px);
+  height: clamp(36px, 4vw, 80px);
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(2n + 1) {
+  width: clamp(20px, 2.4vw, 50px);
+  height: clamp(20px, 2.4vw, 50px);
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(3n + 2) {
+  width: clamp(26px, 3vw, 70px);
+  height: clamp(26px, 3vw, 70px);
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(n) {
+  animation-delay: 1.9s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(2n) {
+  animation-delay: 3.9s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(3n) {
+  animation-delay: 2.3s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(4n) {
+  animation-delay: 4.4s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(5n) {
+  animation-delay: 5s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(6n) {
+  animation-delay: 3.5s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(7n) {
+  animation-delay: 2.8s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(8n) {
+  animation-delay: 1.5s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(9n) {
+  animation-delay: 3.3s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(10n) {
+  animation-delay: 2.5s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(11n) {
+  animation-delay: 1.2s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(12n) {
+  animation-delay: 4.1s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(13n) {
+  animation-delay: 1s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(14n) {
+  animation-delay: 4.7s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(15n) {
+  animation-delay: 3s;
+}
+.japanese-preferred #maple_leaf .mp:nth-of-type(n) {
+  animation-timing-function: ease-in-out;
+}
+@keyframes falling {
+  0% {
+    transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(650px, 1200px, 40px) rotate3d(1, 1, 1, 720deg);
+    opacity: 0;
+  }
+}
+@keyframes falling2 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(900px, 1200px, 80px) rotate3d(1, 1, 1, 360deg);
+    opacity: 0;
+  }
+}
+@keyframes falling3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate3d(1, 1, 1, 0deg);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(230px, 1200px, 100px) rotate3d(1, 1, 1, 500deg);
+    opacity: 0;
+  }
+}
+.japanese-preferred .main-logo {
+  margin-bottom: 40px;
+  position: relative;
+}
+.japanese-preferred .main-content {
+  position: relative;
+  z-index: 5;
+  width: 1150px;
+  max-width: 93.5%;
+  margin: 0 auto;
+}
+.japanese-preferred .main-content img {
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+@media only screen and (max-width: 768px) {
+  .japanese-preferred {
+    background-position: 50% 54vw;
+    background-size: 150% auto;
+  }
+  .japanese-preferred #maple_leaf {
+    display: none;
+  }
+  .japanese-preferred .main-logo {
+    margin-bottom: 20px;
+  }
+  .japanese-preferred .main-logo .logo_pic {
+    width: 135%;
+    min-width: 135%;
+    margin-left: -17.5%;
+  }
+  .japanese-preferred .main-content {
+    margin: 0 auto -40px;
+  }
+  .japanese-preferred .main-content img {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=japanese-preferred-hall.css.map */

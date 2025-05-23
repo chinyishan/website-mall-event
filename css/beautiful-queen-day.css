@@ -1,0 +1,381 @@
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aaaaaa;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+
+.beautiful-queen-day {
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230202_Im-Queen_bg_VC2.jpg");
+  background-position: 0 129vw;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: transparent;
+  overflow: hidden;
+}
+.beautiful-queen-day img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.beautiful-queen-day .content_all {
+  margin-bottom: 60px;
+}
+.beautiful-queen-day .content_all .content_title {
+  margin-bottom: 25px;
+}
+.beautiful-queen-day .main-logo {
+  position: relative;
+  margin-bottom: 20px;
+}
+.beautiful-queen-day .main-logo img:nth-child(1) {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 57%;
+}
+.beautiful-queen-day .float_menuEX {
+  position: absolute;
+  top: 12.5vh;
+  left: 7%;
+  height: 50vh;
+  z-index: 10;
+  transition: all 0.2s linear;
+}
+.beautiful-queen-day .float_menuEX.active {
+  position: fixed !important;
+  top: 22.5vh !important;
+}
+.beautiful-queen-day .main-content {
+  position: relative;
+  z-index: 5;
+  width: 1170px;
+  max-width: 93.5%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.beautiful-queen-day .main-content .wrap_discount {
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230202_Im-Queen_coupon_VC2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.beautiful-queen-day .main-content .wrap_discount .discount_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.beautiful-queen-day .main-content .wrap_discount .discount_row .discount_col {
+  width: 30%;
+}
+.beautiful-queen-day .main-content .wrap_discount .discount_row a.discount_col {
+  display: block;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_discount .discount_row a.discount_col:hover {
+  transform: translateY(-8px);
+}
+.beautiful-queen-day .main-content .wrap_vie .vie_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.beautiful-queen-day .main-content .wrap_vie .vie_row .vie_col {
+  width: 32%;
+  margin: 5px;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_vie .vie_row .vie_col:hover {
+  transform: translateY(-12px);
+}
+.beautiful-queen-day .main-content .wrap_featured .featured_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beautiful-queen-day .main-content .wrap_featured .featured_row .featured_col {
+  width: 26%;
+  margin: 0 25px;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_featured .featured_row .featured_col:hover {
+  transform: translateY(-12px);
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_title li {
+  margin: 5px;
+  display: block;
+  width: 18%;
+  padding: 10px;
+  font-size: 44px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.3px #7f6d38;
+  color: #7f6d38;
+  background-color: #700615;
+  cursor: pointer;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_title li.active {
+  -webkit-text-stroke: 0.3px #ffda71;
+  color: #ffda71;
+  background-color: #e00c2a;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #d42b20;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content .brand_col {
+  margin: 3px;
+  width: 19%;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content .brand_col a img {
+  display: block;
+  width: 100%;
+}
+.beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content .brand_col:hover {
+  transform: translateY(-12px);
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_header {
+  position: relative;
+  background: linear-gradient(-45deg, #f8ea78, #c79734);
+  border-radius: 30px 30px 0 0;
+  margin: 0 auto;
+  padding: 15px;
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_header a.link_more {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: block;
+  width: 15%;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_header a.link_more:hover {
+  transform: translateX(8px);
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_header a.link_more img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("https://photo.greattree.com.tw/gre_special/campaign/img/beautiful-queen-day/20230213_Im-Queen_buy_BG.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top left;
+  border-left: 7px solid #c79734;
+  border-right: 7px solid #c79734;
+  padding: 20px 0;
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col {
+  width: 30%;
+  margin: 5px;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col:hover {
+  transform: translateY(-12px);
+}
+.beautiful-queen-day .main-content .wrap_deliver::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(-45deg, #c79734, #f8ea78, #c79734, #f8ea78, #c79734);
+}
+.beautiful-queen-day .main-content .wrap_more {
+  margin-bottom: 40px;
+}
+.beautiful-queen-day .main-content .wrap_more a {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  transition: 0.3s ease-out;
+}
+.beautiful-queen-day .main-content .wrap_more a:hover {
+  transform: scale(0.9);
+}
+.beautiful-queen-day .main-content .wrap_more a img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  .beautiful-queen-day .main-content .wrap_brand .tab_title li {
+    width: 18%;
+    padding: 8px;
+    font-size: 32px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .beautiful-queen-day .float_menuEX {
+    display: none;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_title li {
+    width: 18%;
+    padding: 8px;
+    font-size: 28px;
+    border-radius: 5px;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content {
+    padding: 10px 0;
+    width: 95%;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content .brand_col {
+    margin: 5px;
+    width: 32%;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content::after {
+    content: "";
+    margin: 5px;
+    width: 32%;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row {
+    background-size: 156% auto;
+    background-position: left;
+    border-left: 4px solid #c79734;
+    border-right: 4px solid #c79734;
+    padding: 10px 0;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col {
+    width: 45%;
+    margin: 5px;
+    transition: 0.3s ease-out;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col:hover {
+    transform: translateY(-12px);
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row::after {
+    content: "";
+    width: 45%;
+    margin: 5px;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(-45deg, #c79734, #f8ea78, #c79734, #f8ea78, #c79734);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .beautiful-queen-day {
+    background-position: 0 150vw;
+  }
+  .beautiful-queen-day .content_all {
+    margin-bottom: 30px;
+  }
+  .beautiful-queen-day .content_all .content_title {
+    margin-bottom: 15px;
+  }
+  .beautiful-queen-day .main-logo img:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+  }
+  .beautiful-queen-day .main-logo img:nth-child(2) {
+    width: 140%;
+    min-width: 140%;
+    margin-left: -20%;
+  }
+  .beautiful-queen-day .main-content .wrap_vie .vie_row .vie_col {
+    width: 45%;
+  }
+  .beautiful-queen-day .main-content .wrap_featured .featured_row .featured_col {
+    width: 30%;
+    margin: 0 10px;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_title li {
+    width: 28%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content {
+    padding: 10px 0;
+    width: 95%;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content .brand_col {
+    margin: 5px;
+    width: 45%;
+  }
+  .beautiful-queen-day .main-content .wrap_brand .tab_container .tab_content::after {
+    content: "";
+    margin: 5px;
+    width: 45%;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_header {
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_header img.deliver_title {
+    width: 50%;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_header a.link_more {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 18%;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row {
+    background-size: 156% auto;
+    background-position: left;
+    border-left: 4px solid #c79734;
+    border-right: 4px solid #c79734;
+    padding: 10px 0;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col {
+    width: 45%;
+    margin: 5px;
+    transition: 0.3s ease-out;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row .deliver_col:hover {
+    transform: translateY(-12px);
+  }
+  .beautiful-queen-day .main-content .wrap_deliver .deliver_row::after {
+    content: "";
+    width: 45%;
+    margin: 5px;
+  }
+  .beautiful-queen-day .main-content .wrap_deliver::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(-45deg, #c79734, #f8ea78, #c79734, #f8ea78, #c79734);
+  }
+  .beautiful-queen-day .main-content .wrap_more a {
+    width: 60%;
+  }
+}/*# sourceMappingURL=beautiful-queen-day.css.map */
