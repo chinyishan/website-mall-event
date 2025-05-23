@@ -48,3 +48,28 @@
   font-weight: 400;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    gap: 1rem;
+  }
+  .card .card-img {
+    height: 100px;
+  }
+  .card h2 {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card .card-img {
+    height: 80px;
+  }
+}
